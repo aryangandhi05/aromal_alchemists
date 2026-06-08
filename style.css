@@ -778,6 +778,10 @@ a {
    ========================================================================== */
 .categories-section {
     background-color: var(--color-bg-dark);
+    /* Ensure categories sit above any overlays and are visible by default */
+    position: relative;
+    z-index: 3;
+    padding-top: 40px;
 }
 
 .categories-grid {
@@ -805,6 +809,14 @@ a {
     flex-direction: column;
     transition: var(--transition-smooth);
     border: 1px solid rgba(255, 255, 255, 0.04);
+    /* Force visible state in case JS animations haven't initialized */
+    opacity: 1 !important;
+    transform: none !important;
+    visibility: visible !important;
+    z-index: 5;
+    /* Debug visuals: temporary border and lighter card background to ensure visibility */
+    border: 1px solid rgba(200, 169, 107, 0.9) !important;
+    background: rgba(30, 30, 30, 0.85) !important;
 }
 
 .category-card:hover {
@@ -858,6 +870,10 @@ a {
 .why-choose-section {
     background: radial-gradient(circle at top, rgba(200, 169, 107, 0.05) 0%, rgba(10, 10, 10, 0) 70%),
                 var(--color-bg-dark);
+    /* Ensure this section sits above decorative overlays */
+    position: relative;
+    z-index: 4;
+    padding-top: 40px;
 }
 
 .features-grid {
@@ -884,6 +900,8 @@ a {
     text-align: center;
     border: 1px solid rgba(255, 255, 255, 0.03);
     transition: var(--transition-smooth);
+    /* Make feature cards slightly lighter so content is legible on dark backgrounds */
+    background: rgba(28,28,28,0.85);
 }
 
 .feature-card:hover {

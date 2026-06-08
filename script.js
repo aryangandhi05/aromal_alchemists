@@ -328,20 +328,12 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // Category Cards staggered rise-on-scroll
-        gsap.from('.category-card', {
-            opacity: 0,
-            y: 60,
-            stagger: 0.15,
-            duration: 0.8,
-            ease: 'power2.out',
-            scrollTrigger: {
-                trigger: '#categories',
-                start: 'top 75%'
-            }
-        });
+        // Category Cards - ensure visible immediately (disable initial hide caused by 'from' animation)
+        // Some environments may not trigger the scroll animation, so set cards visible by default.
+        gsap.set('.category-card', { opacity: 1, y: 0 });
 
-        // Feature cards slide up staggered
+        // Feature cards slide up staggered — ensure visible by default in case ScrollTrigger doesn't fire
+        gsap.set('.feature-card', { opacity: 1, y: 0 });
         gsap.from('.feature-card', {
             opacity: 0,
             y: 50,
