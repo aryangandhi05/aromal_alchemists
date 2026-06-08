@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aroma Alchemists - Crafting Fragrance Experiences. Premium luxury home, office, and car air fresheners, reed diffusers, scented candles, and curated gift packs.">
+    <title>Aroma Alchemists | Crafting Fragrance Experiences</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Inter:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Scroll Progress Indicator -->
+    <div id="scroll-progress-bar" class="scroll-progress-bar"></div>
+
+    <!-- Navigation Header -->
+    <header class="header" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo" id="nav-logo">AROMA ALCHEMISTS</a>
+            
+            <nav class="nav-links" id="nav-menu">
+                <a href="#home" class="nav-item">Home</a>
+                <a href="#about" class="nav-item">About</a>
+                <a href="#categories" class="nav-item">Categories</a>
+                <a href="#experience" class="nav-item">Experience</a>
+                <a href="#gifts" class="nav-item">Gift Collection</a>
+                <a href="#contact" class="nav-item">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-gold-outline" id="nav-inquire-btn">Inquire Now</a>
+                <button class="hamburger" id="hamburger-btn" aria-label="Toggle Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Dropdown Menu -->
+    <div class="mobile-menu" id="mobile-menu-overlay">
+        <button class="mobile-menu-close" id="mobile-menu-close-btn">&times;</button>
+        <nav class="mobile-nav-links">
+            <a href="#home" class="mobile-nav-item">Home</a>
+            <a href="#about" class="mobile-nav-item">About</a>
+            <a href="#categories" class="mobile-nav-item">Categories</a>
+            <a href="#experience" class="mobile-nav-item">Experience</a>
+            <a href="#gifts" class="mobile-nav-item">Gift Collection</a>
+            <a href="#contact" class="mobile-nav-item">Contact</a>
+            <a href="#contact" class="btn btn-gold mobile-inquire-btn">Inquire Now</a>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero-section" id="home">
+            <div class="hero-bg-wrapper">
+                <img src="assets/hero_bg.png" alt="Luxury perfume bottle mist spray" class="hero-bg-image" id="hero-bg-img">
+                <div class="hero-overlay"></div>
+                <div class="aroma-particles" id="particles-container"></div>
+            </div>
+            
+            <div class="hero-content">
+                <div class="hero-text-wrap">
+                    <span class="hero-subtitle fade-up">THE ARTISANAL SCENT LAB</span>
+                    <h1 class="hero-title fade-up-delay-1">Crafting Fragrance Experiences</h1>
+                    <p class="hero-desc fade-up-delay-2">Premium aroma solutions designed to transform every space into a memorable experience.</p>
+                    <div class="hero-buttons fade-up-delay-3">
+                        <a href="#categories" class="btn btn-gold">Explore Collection</a>
+                        <a href="#contact" class="btn btn-white-outline">Contact Us</a>
+                    </div>
+                </div>
+
+                <!-- Animated Floating Showcase Card -->
+                <div class="hero-showcase-container fade-up-delay-4">
+                    <div class="showcase-card glass-card">
+                        <div class="showcase-card-border"></div>
+                        <div class="showcase-img-wrap">
+                            <img src="assets/cat_diffuser.png" alt="Aroma Alchemists signature reed diffuser" class="floating-showcase-img">
+                        </div>
+                        <div class="showcase-meta">
+                            <span class="showcase-tag">Signature Blend</span>
+                            <h3 class="showcase-name">Sandalwood & Fig</h3>
+                            <p class="showcase-price">Luxury Reed Diffuser</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section" id="about">
+            <div class="section-container">
+                <div class="about-grid">
+                    <div class="about-text-content">
+                        <span class="section-subtitle">OUR PHILOSOPHY</span>
+                        <h2 class="section-title">The Art of Fragrance</h2>
+                        <div class="divider-gold"></div>
+                        <p class="paragraph">At Aroma Alchemists, we blend creativity, science, and craftsmanship to create fragrances that inspire emotions and elevate environments.</p>
+                        <p class="paragraph">Every product is thoughtfully designed to bring comfort, freshness, and elegance into daily life. From the selection of delicate raw essences to the architectural design of our containers, we prioritize a sophisticated sensory journey.</p>
+                        
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <span class="stat-num">100%</span>
+                                <span class="stat-lbl">Premium Ingredients</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-num">24h+</span>
+                                <span class="stat-lbl">Extended Freshness</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-num">Artisanal</span>
+                                <span class="stat-lbl">Craftsmanship</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-visuals">
+                        <div class="visual-card-wrap">
+                            <div class="visual-card-bg"></div>
+                            <img src="assets/experience_bg.png" alt="Aromatic essential oil ripples" class="about-main-img">
+                            <div class="floating-badge glass-card">
+                                <i data-lucide="shield-check" class="gold-icon"></i>
+                                <span>Certified Cruelty-Free & Natural</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories Section -->
+        <section class="categories-section" id="categories">
+            <div class="section-container">
+                <div class="center-header">
+                    <span class="section-subtitle">EXPLORE</span>
+                    <h2 class="section-title">Product Categories</h2>
+                    <div class="divider-gold center"></div>
+                    <p class="center-desc">Transforming spaces with scientifically-blended olfactory magic. Discover our curated collections.</p>
+                </div>
+
+                <div class="categories-grid">
+                    <!-- Category 1 -->
+                    <div class="category-card glass-card">
+                        <div class="category-img-wrap">
+                            <img src="assets/cat_gel_pocket.png" alt="Aroma Gel Pocket" class="category-img">
+                        </div>
+                        <div class="category-info">
+                            <h3 class="category-card-title">Aroma Gel Pocket</h3>
+                            <p class="category-card-desc">Compact fragrance solutions perfect for cars, wardrobes, travel bags, and small spaces.</p>
+                            <a href="#contact" class="btn-text-gold">Learn More <i data-lucide="arrow-right" class="arrow-icon"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Category 2 -->
+                    <div class="category-card glass-card">
+                        <div class="category-img-wrap">
+                            <img src="assets/cat_pods.png" alt="Aroma Pods" class="category-img">
+                        </div>
+                        <div class="category-info">
+                            <h3 class="category-card-title">Aroma Pods</h3>
+                            <p class="category-card-desc">Modern aroma pods delivering long-lasting freshness with minimal effort.</p>
+                            <a href="#contact" class="btn-text-gold">Learn More <i data-lucide="arrow-right" class="arrow-icon"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Category 3 -->
+                    <div class="category-card glass-card">
+                        <div class="category-img-wrap">
+                            <img src="assets/cat_diffuser.png" alt="Aroma Oil Diffusers" class="category-img">
+                        </div>
+                        <div class="category-info">
+                            <h3 class="category-card-title">Aroma Oil Diffusers</h3>
+                            <p class="category-card-desc">Elegant diffuser solutions designed to create immersive aromatic environments.</p>
+                            <a href="#contact" class="btn-text-gold">Learn More <i data-lucide="arrow-right" class="arrow-icon"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Category 4 -->
+                    <div class="category-card glass-card">
+                        <div class="category-img-wrap">
+                            <img src="assets/cat_spray.png" alt="Aroma Spray" class="category-img">
+                        </div>
+                        <div class="category-info">
+                            <h3 class="category-card-title">Aroma Spray</h3>
+                            <p class="category-card-desc">Instant freshness and fragrance for homes, offices, vehicles, and personal spaces.</p>
+                            <a href="#contact" class="btn-text-gold">Learn More <i data-lucide="arrow-right" class="arrow-icon"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Category 5 -->
+                    <div class="category-card glass-card">
+                        <div class="category-img-wrap">
+                            <img src="assets/cat_candle.png" alt="Aroma Scented Candles" class="category-img">
+                        </div>
+                        <div class="category-info">
+                            <h3 class="category-card-title">Aroma Scented Candles</h3>
+                            <p class="category-card-desc">Luxury scented candles crafted to enhance relaxation and ambiance.</p>
+                            <a href="#contact" class="btn-text-gold">Learn More <i data-lucide="arrow-right" class="arrow-icon"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Category 6 -->
+                    <div class="category-card glass-card">
+                        <div class="category-img-wrap">
+                            <img src="assets/cat_gift_pack.png" alt="Gift Packs" class="category-img">
+                        </div>
+                        <div class="category-info">
+                            <h3 class="category-card-title">Gift Packs</h3>
+                            <p class="category-card-desc">Beautifully curated fragrance collections perfect for gifting and special occasions.</p>
+                            <a href="#contact" class="btn-text-gold">Learn More <i data-lucide="arrow-right" class="arrow-icon"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Aroma Alchemists Section -->
+        <section class="why-choose-section">
+            <div class="section-container">
+                <div class="center-header">
+                    <span class="section-subtitle">THE ALCHEMIST STANDARD</span>
+                    <h2 class="section-title">Why Choose Aroma Alchemists</h2>
+                    <div class="divider-gold center"></div>
+                </div>
+
+                <div class="features-grid">
+                    <!-- Feature 1 -->
+                    <div class="feature-card glass-card">
+                        <div class="feature-icon-box">
+                            <i data-lucide="hourglass" class="gold-icon"></i>
+                        </div>
+                        <h3 class="feature-title">Long Lasting Fragrance</h3>
+                        <p class="feature-desc">Premium formulations designed for extended freshness, slowly diffusing scent particles for a persistent effect.</p>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="feature-card glass-card">
+                        <div class="feature-icon-box">
+                            <i data-lucide="sparkles" class="gold-icon"></i>
+                        </div>
+                        <h3 class="feature-title">Elegant Design</h3>
+                        <p class="feature-desc">Products crafted to complement modern lifestyles, blending seamlessly as refined decorative elements in any room.</p>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="feature-card glass-card">
+                        <div class="feature-icon-box">
+                            <i data-lucide="leaf" class="gold-icon"></i>
+                        </div>
+                        <h3 class="feature-title">Premium Ingredients</h3>
+                        <p class="feature-desc">Carefully selected fragrance compositions sourced sustainably, offering clean burns and safe dispersals.</p>
+                    </div>
+
+                    <!-- Feature 4 -->
+                    <div class="feature-card glass-card">
+                        <div class="feature-icon-box">
+                            <i data-lucide="layout-grid" class="gold-icon"></i>
+                        </div>
+                        <h3 class="feature-title">Versatile Usage</h3>
+                        <p class="feature-desc">Perfectly engineered solutions suitable for homes, executive offices, cars, luxury hotels, and high-end gifting.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Luxury Experience Section -->
+        <section class="experience-section" id="experience">
+            <div class="experience-bg-wrap">
+                <img src="assets/experience_bg.png" alt="Premium liquid essential oil ripples" class="experience-bg-img" id="experience-parallax-img">
+                <div class="experience-overlay"></div>
+            </div>
+
+            <div class="section-container experience-inner">
+                <span class="experience-tagline">AN SENSORY REVELATION</span>
+                <h2 class="experience-headline">Fragrance That Defines Spaces</h2>
+                <div class="divider-gold center"></div>
+                <p class="experience-text">Scent is the most powerful trigger of memory and emotion. At Aroma Alchemists, we create custom olfactory tapestries that leave lasting impressions. When someone steps into your office, your car, or your home, the atmosphere immediately reflects sophistication, warmth, and balance. We don't just cover scents—we define your space.</p>
+                <a href="#contact" class="btn btn-gold btn-large">Request Custom Blend Consultation</a>
+            </div>
+        </section>
+
+        <!-- Gift Collection Showcase Section -->
+        <section class="gift-section" id="gifts">
+            <div class="section-container">
+                <div class="gift-grid">
+                    <div class="gift-visuals">
+                        <div class="gift-img-box">
+                            <img src="assets/cat_gift_pack.png" alt="Curated Aroma Alchemists Gift Box" class="gift-main-img">
+                            <div class="gift-float-card glass-card">
+                                <span class="gold-text">★★★★★</span>
+                                <p>"The box itself smells divine before even opening!"</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gift-text-content">
+                        <span class="section-subtitle">THE ROYAL COLLECTION</span>
+                        <h2 class="section-title">The Perfect Gift of Fragrance</h2>
+                        <div class="divider-gold"></div>
+                        <p class="paragraph">Curated aroma collections crafted for memorable gifting experiences. Whether celebrating corporate milestones, weddings, or personal relationships, Aroma Alchemists offers customized packaging and scent selections that deliver ultimate prestige.</p>
+                        
+                        <ul class="gift-benefits">
+                            <li><i data-lucide="check" class="gold-icon"></i> Customized Premium Embossed Rigid Box</li>
+                            <li><i data-lucide="check" class="gold-icon"></i> Assortment of Diffusers, Candles, and Sprays</li>
+                            <li><i data-lucide="check" class="gold-icon"></i> Handwritten Luxury Calligraphy Note Included</li>
+                            <li><i data-lucide="check" class="gold-icon"></i> Express Worldwide Delivery & Ribbon Styling</li>
+                        </ul>
+
+                        <a href="#contact" class="btn btn-gold">Explore Gift Catalog</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section">
+            <div class="section-container">
+                <div class="center-header">
+                    <span class="section-subtitle">TESTIMONIALS</span>
+                    <h2 class="section-title">Words from Our Patrons</h2>
+                    <div class="divider-gold center"></div>
+                </div>
+
+                <div class="testimonials-slider-container">
+                    <div class="testimonials-track" id="testimonials-track">
+                        <!-- Card 1 -->
+                        <div class="testimonial-card glass-card active">
+                            <div class="rating-stars">★★★★★</div>
+                            <blockquote class="testimonial-text">"The Aroma Oil Diffuser completely transformed my workspace. It creates an incredible environment that keeps clients commenting daily. Elegant, rich, and never overpowering."</blockquote>
+                            <cite class="testimonial-author">Sophia Loren, Executive Designer</cite>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="testimonial-card glass-card">
+                            <div class="rating-stars">★★★★★</div>
+                            <blockquote class="testimonial-text">"Elegant fragrance and beautiful packaging. The scented candles burn clean and even, while the spray is perfect for instant car freshness before a drive."</blockquote>
+                            <cite class="testimonial-author">Maximilian Vance, Luxury Car Collector</cite>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="testimonial-card glass-card">
+                            <div class="rating-stars">★★★★★</div>
+                            <blockquote class="testimonial-text">"Perfect gift choice for premium occasions. The alchemist team customized a batch of gift sets for my corporate event and our clients were absolutely amazed by the quality."</blockquote>
+                            <cite class="testimonial-author">Eleanor Fitzgerald, VP Events</cite>
+                        </div>
+                    </div>
+
+                    <!-- Slide Controls -->
+                    <div class="slider-controls">
+                        <button class="slide-btn" id="prev-slide-btn" aria-label="Previous Review"><i data-lucide="chevron-left"></i></button>
+                        <div class="slider-dots" id="slider-dots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                        <button class="slide-btn" id="next-slide-btn" aria-label="Next Review"><i data-lucide="chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="section-container">
+                <div class="contact-grid">
+                    <div class="contact-details">
+                        <span class="section-subtitle">CONNECT WITH US</span>
+                        <h2 class="section-title">Experience the Alchemy</h2>
+                        <div class="divider-gold"></div>
+                        <p class="paragraph">Have questions about our signature aromas, bespoke gift collections, or private consultations? Reach out to our olfactory alchemists. We'd love to help you design your signature environment.</p>
+                        
+                        <div class="contact-methods">
+                            <div class="method-item">
+                                <div class="method-icon-box">
+                                    <i data-lucide="mail" class="gold-icon"></i>
+                                </div>
+                                <div class="method-meta">
+                                    <span class="method-label">Email Us</span>
+                                    <a href="mailto:shiwaliksharma1987@gmail.com" class="method-link">shiwaliksharma1987@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="method-item">
+                                <div class="method-icon-box">
+                                    <i data-lucide="phone" class="gold-icon"></i>
+                                </div>
+                                <div class="method-meta">
+                                    <span class="method-label">Direct Line</span>
+                                    <a href="tel:9988163787" class="method-link">9988163787</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Social and Quick CTA Grid -->
+                        <div class="quick-ctas">
+                            <a href="https://wa.me/919988163787?text=Hello%20Aroma%20Alchemists%2C%20I%20would%20like%20to%20inquire%20about%20your%20premium%20fragrance%20collection." target="_blank" rel="noopener noreferrer" class="cta-card wa-cta">
+                                <i data-lucide="message-square" class="wa-icon"></i>
+                                <span>Message on WhatsApp</span>
+                            </a>
+                            <a href="mailto:shiwaliksharma1987@gmail.com?subject=Premium%20Fragrance%20Inquiry" class="cta-card mail-cta">
+                                <i data-lucide="mail"></i>
+                                <span>Send Direct Email</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Glass Contact Form -->
+                    <div class="contact-form-container">
+                        <form id="contact-form" class="glass-card contact-form" action="#" method="POST">
+                            <h3 class="form-title">Send a Request</h3>
+                            <p class="form-subtitle">For orders, bespoke corporate gifting, or general queries.</p>
+                            
+                            <div class="form-group">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" id="name" name="name" class="form-input" placeholder="Your Name" required>
+                            </div>
+
+                            <div class="form-group-row">
+                                <div class="form-group">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input type="email" id="email" name="email" class="form-input" placeholder="you@example.com" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone" class="form-label">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone" class="form-input" placeholder="+1 (555) 000-0000">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message" class="form-label">Your Message</label>
+                                <textarea id="message" name="message" class="form-textarea" placeholder="Describe your workspace, event, or inquiry..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-gold btn-full">Submit Request <i data-lucide="send" class="btn-icon"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="section-container footer-container">
+            <div class="footer-brand-column">
+                <a href="#home" class="footer-logo">AROMA ALCHEMISTS</a>
+                <p class="footer-tagline">"Crafting Fragrance Experiences."</p>
+                <div class="footer-socials">
+                    <a href="https://instagram.com/aromaalchemists" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                    <a href="https://facebook.com/aromaalchemists" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                    <a href="https://linkedin.com/company/aromaalchemists" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links-column">
+                <h4 class="footer-heading">Navigation</h4>
+                <ul class="footer-links-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#categories">Product Categories</a></li>
+                    <li><a href="#experience">Luxury Experience</a></li>
+                    <li><a href="#gifts">Gift Collections</a></li>
+                    <li><a href="#contact">Contact Concierge</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-info-column">
+                <h4 class="footer-heading">Hours & Support</h4>
+                <p class="footer-info-text">Online Concierge: 24 / 7 Available</p>
+                <p class="footer-info-text">&copy; 2026 Aroma Alchemists. All rights reserved. aromaalchemists.com</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Toast Notification -->
+    <div class="toast" id="success-toast">
+        <div class="toast-content">
+            <i data-lucide="check-circle" class="toast-icon"></i>
+            <div class="toast-message">
+                <h4>Message Received</h4>
+                <p>Our scent concierge will be in touch shortly.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- GSAP & ScrollTrigger Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <!-- Lenis Smooth Scroll -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
