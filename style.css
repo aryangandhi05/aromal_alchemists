@@ -295,22 +295,20 @@ a {
 }
 
 .logo {
-    font-family: var(--font-heading);
-    font-size: 1.6rem;
-    letter-spacing: 0.15em;
-    color: var(--text-light);
-    font-weight: 400;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
     position: relative;
 }
 
 .logo::after {
-    content: '';
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-    width: 30%;
-    height: 1px;
-    background-color: var(--color-gold);
+    display: none;
+}
+
+.logo-img {
+    max-height: 80px;
+    width: auto;
+    display: block;
 }
 
 .nav-links {
@@ -571,7 +569,6 @@ a {
 .hero-showcase-container {
     display: flex;
     justify-content: center;
-    perspective: 1000px;
 }
 
 .showcase-card {
@@ -580,12 +577,11 @@ a {
     border-radius: 4px;
     position: relative;
     overflow: hidden;
-    transform: rotateY(-10deg) rotateX(10deg);
-    transition: transform 0.5s ease;
+    transform: none;
 }
 
 .showcase-card:hover {
-    transform: rotateY(0deg) rotateX(0deg) translateY(-10px);
+    transform: none;
 }
 
 .showcase-card-border {
@@ -610,11 +606,11 @@ a {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.8s ease;
+    transition: none;
 }
 
 .showcase-card:hover .floating-showcase-img {
-    transform: scale(1.1);
+    transform: none;
 }
 
 .showcase-meta {
@@ -1017,6 +1013,87 @@ a {
 }
 
 /* ==========================================================================
+   Aroma Gel Pocket Details Section
+   ========================================================================== */
+.gel-pocket-details-section {
+    background-color: var(--color-bg-dark);
+}
+
+.gel-pocket-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.gel-pocket-card {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gel-pocket-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+}
+
+.gel-pocket-img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.gel-pocket-card-body {
+    padding: 26px;
+}
+
+.gel-pocket-card-body h3 {
+    font-size: 1.2rem;
+    margin-bottom: 14px;
+}
+
+.gel-pocket-card-body p {
+    color: var(--text-muted-light);
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+.gel-pocket-specs {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 10px;
+}
+
+.gel-pocket-specs li {
+    position: relative;
+    padding-left: 24px;
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+
+.gel-pocket-specs li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--color-gold);
+}
+
+@media (max-width: 1024px) {
+    .gel-pocket-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .gel-pocket-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ==========================================================================
    Gift Showcase Section
    ========================================================================== */
 .gift-section {
@@ -1045,14 +1122,13 @@ a {
 .gift-img-box {
     position: relative;
     width: 85%;
-    max-width: 480px;
-    aspect-ratio: 1/1;
+    max-width: 560px;
 }
 
 .gift-main-img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
+    object-fit: contain;
     border-radius: 4px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
 }
@@ -1487,32 +1563,14 @@ a {
     margin-bottom: 25px;
 }
 
-.footer-socials {
-    display: flex;
-    gap: 15px;
+.footer-gst {
+    margin-top: 20px;
 }
 
-.footer-socials a {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--text-muted-light);
-    transition: var(--transition-fast);
-}
-
-.footer-socials a:hover {
-    color: var(--color-gold);
-    border-color: var(--color-gold);
-    transform: translateY(-3px);
-}
-
-.footer-socials a svg {
-    width: 18px;
-    height: 18px;
+.gst-badge {
+    max-width: 100px;
+    height: auto;
+    display: block;
 }
 
 .footer-heading {
@@ -1545,6 +1603,17 @@ a {
     color: var(--text-muted-light);
     margin-bottom: 12px;
     line-height: 1.6;
+}
+
+.footer-link {
+    color: var(--color-gold);
+    text-decoration: none;
+    transition: var(--transition-fast);
+}
+
+.footer-link:hover {
+    color: var(--color-gold-hover);
+    text-decoration: underline;
 }
 
 /* ==========================================================================
